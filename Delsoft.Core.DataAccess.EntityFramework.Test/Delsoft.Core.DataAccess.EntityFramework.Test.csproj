@@ -9,7 +9,7 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
     <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
     <WarningsAsErrors />
-    <DocumentationFile>bin\Debug\netcoreapp2.0\Delsoft.Core.DataModel.Test.xml</DocumentationFile>
+    <DocumentationFile>bin\Debug\netcoreapp2.0\Delsoft.Core.DataAccess.EntityFramework.Test.xml</DocumentationFile>
   </PropertyGroup>
 
   <ItemGroup>
@@ -17,14 +17,17 @@
   </ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="2.1.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.InMemory" Version="2.1.1" />
     <PackageReference Include="Microsoft.NET.Test.Sdk" Version="15.8.0" />
-    <PackageReference Include="StyleCop.Analyzers" Version="1.0.2" />
     <PackageReference Include="xunit" Version="2.4.0" />
     <PackageReference Include="xunit.runner.visualstudio" Version="2.4.0" />
     <DotNetCliToolReference Include="dotnet-xunit" Version="2.3.1" />
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\Delsoft.Core.DataAccess.EntityFramework\Delsoft.Core.DataAccess.EntityFramework.csproj" />
+    <ProjectReference Include="..\Delsoft.Core.DataAccess\Delsoft.Core.DataAccess.csproj" />
     <ProjectReference Include="..\Delsoft.Core.DataModel\Delsoft.Core.DataModel.csproj" />
   </ItemGroup>
 

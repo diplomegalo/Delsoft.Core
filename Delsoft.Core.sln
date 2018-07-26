@@ -7,6 +7,17 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Delsoft.Core.DataModel", "D
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Delsoft.Core.DataModel.Test", "Delsoft.Core.DataModel.Test\Delsoft.Core.DataModel.Test.csproj", "{6A919D0C-F39F-4BB2-A439-61E65FCF6E9D}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Delsoft.Core.DataAccess.EntityFramework", "Delsoft.Core.DataAccess.EntityFramework\Delsoft.Core.DataAccess.EntityFramework.csproj", "{C1576102-EB7A-4354-AB70-A3433151DE0C}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Delsoft.Core.DataAccess", "Delsoft.Core.DataAccess\Delsoft.Core.DataAccess.csproj", "{3613DE7C-0A64-414F-84E8-D9AC3110E7BB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{AD463B24-5B52-4307-8D96-60485E68A9BF}"
+	ProjectSection(SolutionItems) = preProject
+		Delsoft.Core.DataModel.Test\stylecop.json = Delsoft.Core.DataModel.Test\stylecop.json
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Delsoft.Core.DataAccess.EntityFramework.Test", "Delsoft.Core.DataAccess.EntityFramework.Test\Delsoft.Core.DataAccess.EntityFramework.Test.csproj", "{6DBABCEE-DEAB-4BA0-9FA0-A1839FB16AC4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +32,18 @@ Global
 		{6A919D0C-F39F-4BB2-A439-61E65FCF6E9D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6A919D0C-F39F-4BB2-A439-61E65FCF6E9D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6A919D0C-F39F-4BB2-A439-61E65FCF6E9D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C1576102-EB7A-4354-AB70-A3433151DE0C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C1576102-EB7A-4354-AB70-A3433151DE0C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C1576102-EB7A-4354-AB70-A3433151DE0C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C1576102-EB7A-4354-AB70-A3433151DE0C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3613DE7C-0A64-414F-84E8-D9AC3110E7BB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3613DE7C-0A64-414F-84E8-D9AC3110E7BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3613DE7C-0A64-414F-84E8-D9AC3110E7BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3613DE7C-0A64-414F-84E8-D9AC3110E7BB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6DBABCEE-DEAB-4BA0-9FA0-A1839FB16AC4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6DBABCEE-DEAB-4BA0-9FA0-A1839FB16AC4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6DBABCEE-DEAB-4BA0-9FA0-A1839FB16AC4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6DBABCEE-DEAB-4BA0-9FA0-A1839FB16AC4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -1,9 +1,12 @@
-﻿using System;
-using DataModel;
-using Microsoft.EntityFrameworkCore;
+﻿// <copyright file="BaseContext.cs" company="Delsoft">
+// Copyright (c) Delsoft. All rights reserved.
+// </copyright>
 
-namespace DataAccess.EntityFramework
+namespace Delsoft.Core.DataAccess.EntityFramework
 {
+    using Delsoft.Core.DataModel;
+    using Microsoft.EntityFrameworkCore;
+
     /// <summary>
     /// Supports entity framework context classes providing base configuration.
     /// </summary>
@@ -16,7 +19,7 @@ namespace DataAccess.EntityFramework
         /// <value>The entities.</value>
         protected DbSet<BaseEntity> Entities { get; set; }
 
-        ///<inheritdoc/>
+        /// <inheritdoc/>
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);

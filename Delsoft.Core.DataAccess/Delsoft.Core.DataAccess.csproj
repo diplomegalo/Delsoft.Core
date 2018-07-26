@@ -10,4 +10,16 @@
     <WarningsAsErrors />
   </PropertyGroup>
 
+  <ItemGroup>
+    <AdditionalFiles Include="..\stylecop.json" Link="stylecop.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="StyleCop.Analyzers" Version="1.0.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Delsoft.Core.DataModel\Delsoft.Core.DataModel.csproj" />
+  </ItemGroup>
+
 </Project>

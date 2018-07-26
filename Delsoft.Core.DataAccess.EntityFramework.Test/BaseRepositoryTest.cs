@@ -1,17 +1,25 @@
-using System;
-using DataModel;
-using Microsoft.EntityFrameworkCore;
-using Xunit;
+// <copyright file="BaseRepositoryTest.cs" company="Delsoft">
+// Copyright (c) Delsoft. All rights reserved.
+// </copyright>
 
-namespace DataAccess.EntityFramework.Test
+namespace Delsoft.Core.DataAccess.EntityFramework.Test
 {
+    using System;
+    using Xunit;
+
+    /// <summary>
+    /// This class provides test for <see cref="BaseRepository{TEntity}"/>
+    /// </summary>
     public class BaseRepositoryTest
     {
+        /// <summary>
+        /// Determines whether this instance [can create entity].
+        /// </summary>
         [Fact]
         public void Can_CreateEntity()
         {
             // Arrange
-            var entity = new TestEntity();
+            var entity = new TestEntity() { Id = 1 };
             var dbContext = new TestContext();
             var repository = new TestEntityRepository(dbContext);
 
@@ -22,6 +30,9 @@ namespace DataAccess.EntityFramework.Test
             Assert.NotEqual(default(DateTime), entity.CreationDate);
         }
 
+        /// <summary>
+        /// Cannots the create entity null.
+        /// </summary>
         [Fact]
         public void Cannot_CreateEntity_Null()
         {
@@ -30,39 +41,10 @@ namespace DataAccess.EntityFramework.Test
             var repository = new TestEntityRepository(dbContext);
 
             // Act
-            var ex = Assert.Throws<ArgumentNullException>(() => repository.Create(null));
+            var actual = new Action(() => repository.Create((TestEntity)null));
 
             // Assert
-            Assert.Equal("entity", ex.ParamName);
-        }
-    }
-
-    internal class TestEntity : BaseEntityGeneric<TestEntity, int>
-    {
-
-    }
-
-    internal class TestContext : BaseContext
-    {
-        public DbSet<TestEntity> EntityTests { get; set; }
-
-        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-        {
-            base.OnConfiguring(optionsBuilder);
-            optionsBuilder.UseInMemoryDatabase(databaseName: "Test");
-        }
-
-        protected override void OnModelCreating(ModelBuilder modelBuilder)
-        {
-            base.OnModelCreating(modelBuilder);
-            modelBuilder.Entity<TestEntity>();
-        }
-    }
-
-    internal class TestEntityRepository : BaseRepository<TestEntity>
-    {
-        public TestEntityRepository(TestContext dbContext) : base(dbContext)
-        {
+            Assert.Equal("entity", Assert.Throws<ArgumentNullException>(actual).ParamName);
         }
     }
 }
