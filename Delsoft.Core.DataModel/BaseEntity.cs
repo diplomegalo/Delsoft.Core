@@ -1,7 +1,11 @@
-﻿using System;
+﻿// <copyright file="BaseEntity.cs" company="Delsoft">
+// Copyright (c) Delsoft. All rights reserved.
+// </copyright>
 
-namespace DataModel
+namespace Delsoft.Core.DataModel
 {
+    using System;
+
     /// <summary>
     /// Support all data model entities classes by providing and Id and base methods.
     /// </summary>

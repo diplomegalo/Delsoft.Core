@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.26403.7
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Delsoft.Core.DataModel", "Delsoft.Core.DataModel\Delsoft.Core.DataModel.csproj", "{19C6A8C3-0A6E-4133-A238-E6F920172FEC}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Delsoft.Core.DataModel.Test", "Delsoft.Core.DataModel.Test\Delsoft.Core.DataModel.Test.csproj", "{6A919D0C-F39F-4BB2-A439-61E65FCF6E9D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{19C6A8C3-0A6E-4133-A238-E6F920172FEC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{19C6A8C3-0A6E-4133-A238-E6F920172FEC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{19C6A8C3-0A6E-4133-A238-E6F920172FEC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6A919D0C-F39F-4BB2-A439-61E65FCF6E9D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6A919D0C-F39F-4BB2-A439-61E65FCF6E9D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6A919D0C-F39F-4BB2-A439-61E65FCF6E9D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6A919D0C-F39F-4BB2-A439-61E65FCF6E9D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
